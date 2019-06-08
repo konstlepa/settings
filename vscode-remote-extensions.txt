@@ -1,0 +1,2 @@
+alefragnani.Bookmarks
+ms-vscode.Go
