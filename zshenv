@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 ulimit -c unlimited
+stty -ixon
 
 alias ls='ls -F'
 
