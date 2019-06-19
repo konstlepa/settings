@@ -34,5 +34,6 @@
 	"git.autofetch": true,
 	"git.confirmSync": false,
 	"workbench.startupEditor": "none",
-	"editor.wrappingIndent": "none"
+	"editor.wrappingIndent": "none",
+	"terminal.integrated.macOptionIsMeta": true
 }
