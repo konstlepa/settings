@@ -35,5 +35,6 @@
 	"git.confirmSync": false,
 	"workbench.startupEditor": "none",
 	"editor.wrappingIndent": "none",
-	"terminal.integrated.macOptionIsMeta": true
+	"terminal.integrated.macOptionIsMeta": true,
+	"window.zoomLevel": 0
 }
