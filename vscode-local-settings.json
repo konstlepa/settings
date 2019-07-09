@@ -36,5 +36,7 @@
 	"workbench.startupEditor": "none",
 	"editor.wrappingIndent": "none",
 	"terminal.integrated.macOptionIsMeta": true,
-	"window.zoomLevel": 0
+	"window.zoomLevel": 0,
+	"selectline.statusbarPriority": 1,
+	"selectline.displayFormat": "%d lines selected"
 }
