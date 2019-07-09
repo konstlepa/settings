@@ -1,2 +1,4 @@
 alefragnani.Bookmarks
+Compulim.vscode-clock
 ms-vscode.Go
+tomoki1207.selectline-statusbar
