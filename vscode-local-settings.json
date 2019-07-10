@@ -25,12 +25,10 @@
 		"TMUX_AUTOSTART": "1",
 		"TMUX_VSCODE_SOCK": "1"
 	},
-	"go.useLanguageServer": true,
 	"extensions.ignoreRecommendations": true,
 	"terminal.integrated.fontFamily": "Menlo",
 	"editor.insertSpaces": false,
 	"editor.acceptSuggestionOnEnter": "off",
-	"workbench.statusBar.feedback.visible": false,
 	"git.autofetch": true,
 	"git.confirmSync": false,
 	"workbench.startupEditor": "none",
@@ -38,5 +36,6 @@
 	"terminal.integrated.macOptionIsMeta": true,
 	"window.zoomLevel": 0,
 	"selectline.statusbarPriority": 1,
-	"selectline.displayFormat": "%d lines selected"
+	"selectline.displayFormat": "%d lines selected",
+	"go.useLanguageServer": true
 }
