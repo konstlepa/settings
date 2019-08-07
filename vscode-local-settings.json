@@ -37,5 +37,8 @@
 	"window.zoomLevel": 0,
 	"selectline.statusbarPriority": 1,
 	"selectline.displayFormat": "%d lines selected",
-	"go.formatTool": "goimports"
+	"go.formatTool": "goimports",
+	"python.terminal.activateEnvironment": false,
+	"python.linting.flake8Enabled": true,
+	"python.formatting.provider": "black"
 }
