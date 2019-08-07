@@ -88,7 +88,7 @@ zstyle ':completion:*:*:cd:*' ignored-patterns '(*/|)CVS'
 zstyle ':completion::*:(-command-|export):*' fake-parameters LD_LIBRARY_PATH
 
 # Load every completion after autocomplete loads.
-for file in ~/.zcompletions/*.zsh; do
+for file in ~/.zcompletions/*; do
 	source "$file"
 done
 
