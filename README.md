@@ -3,7 +3,7 @@ I use a Linux-based machine for remote development using SSH and a macOS-based m
 
 ## Requirements
 * VSCode >= 1.35
-* tmux <= 2.8
+* tmux >= 2.9
 * zsh >= 5.7
 
 ## Download
@@ -19,26 +19,13 @@ ln -s ~/.settings/zshenv ~/.zshenv
 These settings are valid for local and remote machines. Additional environment variables should be in `~/.zshenv.local`.
 
 ### The environment variables
+* TMUX_EXEC - use a different path to tmux's executable.
 * TMUX_AUTOSTART - attach to a tmux's session automatically after login.
 * TMUX_VSCODE_SOCK - use a separate tmux's socket for VSCode.
 
 ## tmux
 ```
 ln -s ~/.settings/tmux.conf ~/.tmux.conf
-```
-
-### Install a specific version on macOS
-```
-git clone https://github.com/Homebrew/homebrew-core.git
-pushd homebrew-core
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/b3bd700d9fc53fa153c884b0ea613822de1f375c/Formula/tmux.rb
-brew pin tmux
-popd
-rm -rf homebrew-core
-```
-The above instructions install tmux 2.8. For another version use another COMMIT-SHA:
-```
-git log master -- Formula/tmux.rb
 ```
 
 ## VSCode

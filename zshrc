@@ -101,6 +101,15 @@ done
 # TMUX CONFIGURATION
 #
 function start_tmux() {
+	tmux_default_exec=$(command -v tmux)
+	if [ -z "$TMUX_EXEC" ]; then
+		TMUX_EXEC=$tmux_default_exec
+	fi
+
+	if [ ! -x "$TMUX_EXEC" ] || [ -z "$TMUX_AUTOSTART" ]; then
+		return
+	fi
+
 	autoload -U add-zsh-hook
 	add-zsh-hook preexec update_env_with_tmux
 
@@ -111,7 +120,7 @@ function start_tmux() {
 		fi
 
 		if [ -n "$TMUX" ]; then
-			eval $(tmux -L $tmux_sock show-environment -s)
+			eval $($TMUX_EXEC -L $tmux_sock show-environment -s)
 		fi
 	}
 
@@ -120,7 +129,7 @@ function start_tmux() {
 	fi
 
 	local tmux_sock=default
-	local tmux_sess=$(tmux -L $tmux_sock list-sessions -F '#{session_name}' | head -n1)
+	local tmux_sess=$($TMUX_EXEC -L $tmux_sock list-sessions -F '#{session_name}' | head -n1)
 	if [ -z "$tmux_sess" ]; then
 		tmux_sess=0
 	fi
@@ -130,10 +139,8 @@ function start_tmux() {
 		tmux_sess=$(basename `pwd` | tr -dc '[:alnum:]-')-$(pwd | shasum | cut -c1-5)
 	fi
 
-	exec tmux -L $tmux_sock new-session -AD -s $tmux_sess
+	exec $TMUX_EXEC -L $tmux_sock new-session -AD -s $tmux_sess
 }
 
-if [ -x "$(command -v tmux)" ] && [ -n "$TMUX_AUTOSTART" ]; then
-	start_tmux
-fi
+start_tmux
 unfunction start_tmux
