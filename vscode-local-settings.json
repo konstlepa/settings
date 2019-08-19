@@ -40,6 +40,5 @@
 	"go.formatTool": "goimports",
 	"python.terminal.activateEnvironment": false,
 	"python.linting.flake8Enabled": true,
-	"python.formatting.provider": "black",
-	"keyboard.dispatch": "keyCode"
+	"python.formatting.provider": "black"
 }
