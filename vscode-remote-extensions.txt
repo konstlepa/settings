@@ -1,5 +1,6 @@
 alefragnani.Bookmarks
 Compulim.vscode-clock
+esbenp.prettier-vscode
 ms-python.python
 ms-vscode.Go
 tomoki1207.selectline-statusbar
