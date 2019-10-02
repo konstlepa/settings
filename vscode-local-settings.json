@@ -44,4 +44,5 @@
     "python.linting.mypyEnabled": true,
     "terminal.integrated.automationShell.osx": "bash",
     "go.buildOnSave": "off",
+    "tlaplus.java.options": "-DTLA-Library=/home/klepa/.local/share/tla/mods",
 }

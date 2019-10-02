@@ -1,4 +1,5 @@
 alefragnani.Bookmarks
+alygin.vscode-tlaplus
 Compulim.vscode-clock
 esbenp.prettier-vscode
 ms-python.python
