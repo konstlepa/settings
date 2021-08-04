@@ -8,7 +8,7 @@ I use a Linux-based machine for remote development using SSH and a macOS-based m
 
 ## Download
 ```
-git clone https://github.com/k-lepa/settings ~/.settings
+git clone https://github.com/konstlepa/settings ~/.settings
 ```
 
 ## Z shell
